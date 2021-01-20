@@ -1,6 +1,6 @@
-# Python Advanced topis
+# Python Advanced topics
 
-In this repository there's explanation of some advanced topics of Python.
+In this repository there's explanation of some advanced topics of Python with some examples.
 
 #### Here's the list of what we going to cover:
 
