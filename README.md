@@ -10,3 +10,5 @@ In this repository there's explanation of some advanced topics of Python with so
     - Arguments unpacking and mutability
     - Default values parameters
     - Collections module(counter, defaultdict, ordereddict, namedtuple, deque)
+    - Timezones(modules: datetime, time)
+    - Regular Expressions
