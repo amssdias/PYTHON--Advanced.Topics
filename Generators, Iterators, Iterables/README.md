@@ -26,7 +26,7 @@ A **generator** is used to circumvent this problem. Instead of having a list, th
 
 You have to run the function every time you want a new number, that’s why it’s called a “generator”. It generates numbers (or indeed strings, or anything else you want to generate).
 
-```
+```python
 def hundred_numbers():
   num = 0
   while num < 100:
@@ -38,7 +38,7 @@ The `yield` keyword is very much like a `return`, in that it gives the value bac
 
 **Generator** comprehension:
 
-```
+```python
 hundred_numbers = (n for n in range(100))
 ```
 
@@ -48,7 +48,7 @@ hundred_numbers = (n for n in range(100))
 
 The below is class which implements `__next__`as if it was a function using the `yield` keyword:
 
-```
+```python
 class FirstHundredGenerator(object):
     def __init__(self):
         self.number = 0
@@ -88,7 +88,7 @@ An **iterable** is an object that has an `__iter__` method defined. The `__iter_
 
 Here’s an example of using our generator to make an **iterable**:
 
-```
+```python
 class FirstHundredGenerator:
     def __init__(self):
         self.number = 0
@@ -109,7 +109,7 @@ class FirstHundredIterable:
 
 Now we have an **iterable** which uses the iterator to get the next value of the sequence it generates. We can do this:
 
-```
+```python
 print(sum(FirstHundredIterable()))  # gives 4950
 
 for i in FirstHundredIterable():
