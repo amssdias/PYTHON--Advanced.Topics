@@ -6,7 +6,7 @@
 A **generator** in Python is a function that remembers the state it’s in, in between executions.
 Let’s explain with an example. Imagine you wanted to build a list of 100 numbers, like this one:
 
-```
+```python
 def hundred_numbers():
   nums = []
   i = 0
