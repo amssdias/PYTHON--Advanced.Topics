@@ -9,6 +9,16 @@ Actions that happen one after another. Programming as we've seen it until now is
 ## Asynchronous
 Actions that don't necessary happen after one another, or that can happen in arbitrary order ("without synchrony").
 
+Async switches cooperatively, so you do need to add explicit code “yield” or “await” to cause a task switch.
+
+Now you control when task switches occur, so locks and other synchronization are no longer needed.
+
+Also, the cost task switches is very low. Calling a pure Python function has more overhead than restarting a generator or awaitable.
+
+This means that async is very cheap.
+
+In return, you’ll need a non-blocking version of just about everything you do. Accordingly, the async world has a huge ecosystem of support tools. This increases the learning curve.
+
 ## Concurrency
 The ability of our programs to run things in different order every time the program runs, without affecting the final outcome.
 
@@ -18,6 +28,10 @@ Running two or more things at the same time.
 ## Thread
 A line of code execution that can run in one of your computer's cores.
 By nature, Python is a linear language, but the threading module comes in handy when you want a little more processing power. While threading in Python cannot be used for parallel CPU computation, it's perfect for I/O operations such as web scraping because the processor is sitting idle waiting for data.
+
+Threads switch preemptively. This is convenient because you don’t need to add explicit code to cause a task switch.
+
+The cost of this convenience is that you have to assume a switch can happen at any time. Accordingly, critical sections have to be guarded with locks.
 
 #### Code example:
 - [Thread](https://github.com/amssdias/python-advanced_topics/blob/master/Asynchronous%20Dev/threads.py)
