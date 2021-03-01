@@ -2,6 +2,11 @@
 
 In here I'm explaining with examples a little bit of this very advanced topic. Make sure to check comments on the code to understand and run them and play around with them.
 
+## Concurrency
+The ability of our programs to run things in different order every time the program runs, without affecting the final outcome.
+
+## Parallelism
+Running two or more things at the same time.
 
 ## Synchronous
 Actions that happen one after another. Programming as we've seen it until now is synchronous, because each line executes after the previous one.
@@ -19,11 +24,6 @@ This means that async is very cheap.
 
 In return, you’ll need a non-blocking version of just about everything you do. Accordingly, the async world has a huge ecosystem of support tools. This increases the learning curve.
 
-## Concurrency
-The ability of our programs to run things in different order every time the program runs, without affecting the final outcome.
-
-## Parallelism
-Running two or more things at the same time.
 
 ## Thread
 A line of code execution that can run in one of your computer's cores.
