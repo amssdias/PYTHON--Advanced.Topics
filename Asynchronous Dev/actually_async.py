@@ -1,12 +1,14 @@
 import asyncio
 import aiohttp
+import async_timeout
 import time
 
 async def fetch_page(session, url):
-    start = time.time()
-    async with session.get(url) as response:
-        print(f'{url} took {time.time() - start}')
-        return response.status
+    async with async_timeout.timeout(10):
+        start = time.time()
+        async with session.get(url) as response:
+            print(f'{url} took {time.time() - start}')
+            return response.status
 
 
 async def get_multiple_pages(loop, *urls):
