@@ -13,4 +13,5 @@ In this repository there's explanation of some advanced topics of Python with so
 - [Timezones(modules: datetime, time)](https://github.com/amssdias/python-advanced_topics/tree/master/datetime%20module)
 - [Regular Expressions, regex](https://github.com/amssdias/python-advanced_topics/tree/master/Regular%20expressions)
 - [Logging module](https://github.com/amssdias/python-advanced_topics/tree/master/Other%20Advanced%20topics)
+- [**_Decorators_**](https://github.com/amssdias/python-advanced_topics/tree/master/decorators)
 - [**_Asynchronous Python Development_**](https://github.com/amssdias/python-advanced_topics/tree/master/Asynchronous%20Dev)

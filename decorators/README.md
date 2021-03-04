@@ -9,6 +9,8 @@ Decorators are very useful, because they allow us to very easily provide some ad
 #### Example
 
 ```python
+import functools
+
 def decorator(func):
     @functools.wraps(func)
     def say_goodbye(*args, **kwargs):
@@ -21,7 +23,7 @@ def decorator(func):
 def say_hello(name):
     print(f"Hello, {name}!")
     
-say_hello("Dias")
+say_hello("Dias") # Welcome... Hello, Dias!
  ```
  
  #### Links to more examples and explanation:
