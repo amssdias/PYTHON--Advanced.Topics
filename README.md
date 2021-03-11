@@ -4,6 +4,7 @@ In this repository there's explanation of some advanced topics of Python with so
 
 ### Here's the list of the topics we going to cover:
 
+- [Advanced OOP(Object Oriented Programming)](https://github.com/amssdias/python-advanced_topics/tree/master/Advanced%20OOP)
 - [Generators, Iterators, Iterables](https://github.com/amssdias/python-advanced_topics/tree/master/Generators%2C%20Iterators%2C%20Iterables)
 - [Built in Functions(filter, map, any, all)](https://github.com/amssdias/python-advanced_topics/tree/master/Generators%2C%20Iterators%2C%20Iterables)
 - [Mutability](https://github.com/amssdias/python-advanced_topics/tree/master/Mutability)
